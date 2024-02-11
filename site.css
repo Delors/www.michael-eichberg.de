@@ -146,11 +146,9 @@ details {
 }
 
 details p {
-    position: absolute;
-    width: 600px;
     background-color: rgb(104, 98, 98);
     color: white;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 0.5em;
     box-shadow: 4px 4px 6px gray, -4px 4px 6px gray;
 }
