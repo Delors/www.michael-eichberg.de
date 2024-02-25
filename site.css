@@ -53,8 +53,14 @@ h1 {
     font-size: x-large;
 }
 
+ul {
+    padding-inline-start: 1em;
+}
+
 li {
-    margin-bottom: 1em;
+    line-height: 1em;
+    padding-left: 0.1em;
+    margin-bottom: 0.25em;
 }
 
 p.bio {
