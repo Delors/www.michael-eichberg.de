@@ -77,10 +77,10 @@ p.my-email tt {
     color: rgb(226, 0, 26);
 }
 
-section.projects,
-section.awards,
-section.courses,
-section.publications {
+div.projects,
+div.awards,
+div.courses,
+div.publications {
     margin-bottom: 14pt;
     display: flex;
     flex-wrap: wrap;
@@ -91,10 +91,10 @@ section.publications {
     counter-reset: publication;
 }
 
-section.projects::after,
-section.awards::after,
-section.courses::after,
-section.publications::after {
+div.projects::after,
+div.awards::after,
+div.courses::after,
+div.publications::after {
     content: "";
     flex: auto;
     flex-basis: 232px;
@@ -103,6 +103,7 @@ section.publications::after {
 }
 
 section.course,
+section.homework,
 section.award,
 section.project,
 section.publication {
@@ -115,6 +116,10 @@ section.publication {
     transition: all 0.3s;
 }
 
+section.homework {
+    background-color: rgba(128, 128, 128, 0.299);
+}
+
 section.entry::before {
     counter-increment: publication;
     content: "[" counter(publication)"] ";
@@ -123,6 +128,7 @@ section.entry::before {
 }
 
 :is(section.course,
+    section.homework,
     section.award,
     section.project,
     section.publication):has(a:hover) {
@@ -172,7 +178,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.footer {
+footer {
     width: calc(100% + 100px);
     margin-top: 1em;
     padding-top: 50px;
