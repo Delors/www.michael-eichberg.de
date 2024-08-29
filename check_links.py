@@ -8,7 +8,6 @@ def check_links(file_path):
         content = file.read()
 
     # Parse the HTML content
-    print(content)
     soup = BeautifulSoup(content, 'html.parser')
 
     # Find all links
@@ -21,11 +20,11 @@ def check_links(file_path):
         
         # Check if the URL has a scheme
         if not parsed_url.scheme:
-            print(f"No scheme": {url}")
+            print(f"No scheme: {url}")
             continue
             
         try:
-            response = requests.head(url, allow_redirects=False)
+            response = requests.head(url, allow_redirects=True)
             if response.status_code == 200:
                 print(f"Valid: {url}")
             else:
@@ -34,5 +33,9 @@ def check_links(file_path):
             print(f"Error: {url} ({e})")
 
 # Path to your HTML file
-file_path = 'teaching.html'
-check_links(file_path)
+print("Checking teaching.html")
+check_links('teaching.html')
+print("Checking projects.html")
+check_links('projects.html')
+print("Checking publications.html")
+check_links('publications.html')
