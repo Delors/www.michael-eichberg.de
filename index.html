@@ -19,19 +19,21 @@
             background-color: whitesmoke;
             padding: 1em;
             border-radius: 0.5em;
-            box-shadow: 3px 3px 4px #333, -1px 1px 2px #CCC , -1px -1px 2px #CCC, 1px -1px 2px #CCC ;
+            box-shadow: 3px 3px 4px #333, -1px 1px 2px #CCC, -1px -1px 2px #CCC, 1px -1px 2px #CCC;
+
+            &:has(a:hover) {
+                box-shadow: 3px 3px 4px #333, -3px 3px 4px #CCC, -3px -3px 4px #CCC, 3px -3px 4px #CCC;
+                transition: all 0.2s ease-in-out;
+            }
+
+            &>a {
+                width: 100%;
+                text-align: center;
+                display: block;
+                font-size: larger;
+            }
         }
-        .area:has(a:hover) {
-            box-shadow: 3px 3px 4px #333, -3px 3px 4px #CCC , -3px -3px 4px #CCC, 3px -3px 4px #CCC ;
-            transition: all 0.2s ease-in-out;
-        }
-        .area>a {
-            width: 100%;
-            text-align: center;
-            display: block;
-            font-size: larger;
-        }
-        </style>
+    </style>
 </head>
 
 <body>
@@ -43,15 +45,15 @@
         <a href="https://www.dhbw-mannheim.de"><img src="logo.png" width="250px"
                 style="float: right; margin-left: 50px;margin-top:5px;margin-bottom:25px"> </a>
         <hr>
-        <p class="bio">I'm a professor of Computer Science. My teaching and
+        <p class="bio">I'm a professor of computer science. My teaching and
             research focus is in the area of software engineering, distributed systems and it security.
         </p>
         <p class="my-email">
-            Contact: <tt>michael.eichberg</tt><span></span><tt>@</tt><span></span><tt>dhbw-mannheim.de</tt>.
+            Contact: <tt>michael.eichberg</tt><span></span><tt>@</tt><span></span><tt>dhbw.de</tt>.
         </p>
     </header>
 
-    <div class="areas" style="display: flex;">
+    <div class="areas">
         <section class="area">
             <a href="publications.html">Publications</a>
             <p>
@@ -61,7 +63,7 @@
         <section class="area">
             <a href="projects.html">Projects</a>
             <p>
-                Projects, I'm currently working on or I've contributed to significantly in the past.
+                Projects, I'm currently working on or I've significantly contributed to in the past.
             </p>
         </section>
         <section class="area">
@@ -73,7 +75,7 @@
     </div>
 
     <footer>
-        <div id="copyright">&copy; 2024</div>
+        <div id="copyright">&copy; 2025</div>
     </footer>
 
 </body>
