@@ -24,11 +24,12 @@ def check_links(file_path):
             continue
             
         try:
+            print(f"Checking: {url}", end=' ')
             response = requests.head(url, allow_redirects=True)
             if response.status_code == 200:
-                print(f"Valid: {url}")
+                print(f"Valid")
             else:
-                print(f"Invalid: {url} (Status code: {response.status_code})")
+                print(f"Invalid (Status code: {response.status_code})")
         except requests.RequestException as e:
             print(f"Error: {url} ({e})")
 
