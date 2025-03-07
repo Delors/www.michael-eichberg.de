@@ -142,6 +142,15 @@ section em {
     font-weight: 500;
 }
 
+section{
+     > p:first-child {
+        margin-top: 0em;
+    }
+    > p:last-child {
+        margin-bottom: 0em;
+    }
+}   
+
 p.authors {
     font-style: italic;
     margin-top: 0.25em;
