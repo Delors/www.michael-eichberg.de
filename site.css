@@ -34,19 +34,20 @@ nav {
     position: relative;
 
     >a {
-    width: 200px;
-    text-align: center;
-    &.current-page {
-        color: black;
-        pointer-events: none;
-    }
-    
-}
+        width: 200px;
+        text-align: center;
 
-&:has(a:hover) {
-    box-shadow: 3px 3px 4px #333, -3px 3px 4px #CCC, -3px -3px 4px #CCC, 3px -3px 4px #CCC;
-    transition: all 0.3s;
-}
+        &.current-page {
+            color: black;
+            pointer-events: none;
+        }
+        
+    }
+
+    &:has(a:hover) {
+        box-shadow: 3px 3px 4px #333, -3px 3px 4px #CCC, -3px -3px 4px #CCC, 3px -3px 4px #CCC;
+        transition: all 0.3s;
+    }
 }
 
 
