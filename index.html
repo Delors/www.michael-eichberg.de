@@ -1,83 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Prof. Dr. Michael Eichberg - Teaching</title>
+        <link rel="stylesheet" href="site.css" />
+    </head>
 
-<head>
-    <meta charset="utf-8">
-    <title>Prof. Dr. Michael Eichberg - Teaching</title>
-    <link rel="stylesheet" href="site.css">
-    <style>
-        .areas {
-            display: flex;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-between;
-        }
+    <body>
+        <header>
+            <a href="https://dl.acm.org/profile/81100632194"
+                ><img src="acm.svg" style="width: 18px; position: absolute"
+            /></a>
+            <span style="font-weight: 400; margin-left: 24px">
+                Prof. Dr. Michael Eichberg</span
+            >
 
-        .area {
-            box-sizing: border-box;
-            width: 30%;
-            background-color: whitesmoke;
-            padding: 1em;
-            border-radius: 0.5em;
-            box-shadow: 3px 3px 4px #333, -1px 1px 2px #CCC, -1px -1px 2px #CCC, 1px -1px 2px #CCC;
-
-            &:has(a:hover) {
-                box-shadow: 3px 3px 4px #333, -3px 3px 4px #CCC, -3px -3px 4px #CCC, 3px -3px 4px #CCC;
-                transition: all 0.2s ease-in-out;
-            }
-
-            &>a {
-                width: 100%;
-                text-align: center;
-                display: block;
-                font-size: larger;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    <header>
-        <a href="https://dl.acm.org/profile/81100632194"><img src="acm.svg" style="width:18px;position: absolute;" /></a>
-        <span style="font-weight: 400;margin-left: 24px;"> Prof. Dr. Michael Eichberg</span>
-        
-        <a href="https://www.dhbw-mannheim.de"><img src="logo.png" width="250px"
-                style="float: right; margin-left: 50px;margin-top:5px;margin-bottom:25px"> </a>
-        <hr>
-        <p class="bio">I'm a professor of computer science. My teaching and
-            research focus is in the area of software engineering, distributed systems and it security.
-        </p>
-        <p class="my-email">
-            Contact: <tt>michael.eichberg</tt><span></span><tt>@</tt><span></span><tt>dhbw.de</tt>.
-        </p>
-    </header>
-
-    <div class="areas">
-        <section class="area">
-            <a href="publications.html">Publications</a>
-            <p>
-                The list of my conference, workshop and journal publications.
+            <a href="https://www.dhbw-mannheim.de"
+                ><img
+                    src="logo.png"
+                    width="250px"
+                    style="
+                        float: right;
+                        margin-left: 50px;
+                        margin-top: 5px;
+                        margin-bottom: 25px;
+                    "
+                />
+            </a>
+            <hr />
+            <p class="bio">
+                I'm a professor of computer science. My teaching and research focus is in
+                the area of software engineering, distributed systems and it security.
             </p>
-        </section>
-        <section class="area">
-            <a href="projects.html">Projects</a>
-            <p>
-                Projects, I'm currently working on or I've significantly contributed to in the past.
+            <p class="my-email">
+                Contact: <tt>michael.eichberg</tt><span></span><tt>@</tt><span></span
+                ><tt>dhbw.de</tt>.
             </p>
-        </section>
-        <section class="area">
-            <a href="teaching.html">Teaching</a>
-            <p>
-                Tutorials and lecture material.
-            </p>
-        </section>
-    </div>
+        </header>
 
-    <footer>
-        <div id="copyright">&copy; 2025</div>
-    </footer>
+        <main>
+            <section class="links-with-descriptions">
+                <a href="publications.html" class="link-with-description">
+                    <h2>Publications</h2>
+                    <p>The list of my conference, workshop and journal publications.</p>
+                </a>
+                <a href="projects.html" class="link-with-description">
+                    <h2>Projects</h2>
+                    <p>
+                        Projects, I'm currently working on or I've significantly
+                        contributed to in the past.
+                    </p>
+                </a>
+                <a href="teaching.html" class="link-with-description">
+                    <h2>Teaching</h2>
+                    <p>Tutorials and lecture material.</p>
+                </a>
+            </section>
+        </main>
 
-</body>
-
+        <footer>
+            <div id="copyright">&copy; 2026</div>
+        </footer>
+    </body>
 </html>
